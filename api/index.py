@@ -7,13 +7,13 @@ from http.server import BaseHTTPRequestHandler
 # ==================== НАСТРОЙКИ ====================
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "ТВОЙ_ТОКЕН_БОТА")
-GROUP_ID = os.environ.get("-1004385760186")
+GROUP_ID = os.environ.get("GROUP_ID", "-1004385760186")
 
 # Список каналов для проверки (без @)
 CHANNELS = [
     "trevoga_odessa_noviny",
     "odesa_golovne",
-    "odesa_informuee"
+    "odesa_informuee",
     "odessapublic"
 ]
 
