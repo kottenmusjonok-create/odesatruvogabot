@@ -18,10 +18,6 @@ GROUP_ID = os.environ.get("GROUP_ID", "-1004385760186")
 
 TARGET_CHANNELS = [
     "trevoga_odessa_noviny",
-    "odesa_golovne",
-    "odesa_informuee",
-    "odessapublic",
-    -1001457356974,
 ]
 
 AD_KEYWORDS = [
