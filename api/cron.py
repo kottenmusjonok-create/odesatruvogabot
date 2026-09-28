@@ -7,10 +7,10 @@ from http.server import BaseHTTPRequestHandler
 # === НАСТРОЙКИ ===
 # Вставь сюда токен бота от @BotFather и ID вашей группы
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "ТВОЙ_ТОКЕН_БОТА")
-GROUP_ID = os.environ.get("GROUP_ID", "-100123456789")
+GROUP_ID = os.environ.get("GROUP_ID", "-1003770349831")
 
 # Название канала (без символа @)
-CHANNEL_USERNAME = "tryvoga_odessa" 
+CHANNEL_USERNAME = "trevoga_odessa_noviny" 
 
 # Слова для фильтрации рекламы
 AD_KEYWORDS = ["робота", "вакансій", "перейти в канал", "підписників", "запропонувати послуги", "робота одеса"]
