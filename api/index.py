@@ -6,7 +6,11 @@ from http.server import BaseHTTPRequestHandler
 from upstash_redis import Redis
 
 # Подключаем Redis
-redis = Redis.from_env()
+# Вместо redis = Redis.from_env() напиши:
+redis = Redis(
+    url=os.environ.get("KV_REST_API_URL") or os.environ.get("UPSTASH_REDIS_REST_URL"),
+    token=os.environ.get("KV_REST_API_TOKEN") or os.environ.get("UPSTASH_REDIS_REST_TOKEN")
+)
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "ТВОЙ_ТОКЕН_БОТА")
 CHANNEL_USERNAME = "trevoga_odessa_noviny"
